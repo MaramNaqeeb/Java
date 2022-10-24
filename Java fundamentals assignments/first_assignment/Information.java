@@ -11,5 +11,6 @@ public class Information{
     
         System.out.println(" My hometown is Palestin, Nablus");
     }
+    
     }
 
