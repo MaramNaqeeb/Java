@@ -7,9 +7,9 @@ public class CafeJava {
         String pendingMessage = ", your order will be ready shortly";
         String readyMessage = ", your order is ready";
         String displayTotalMessage = "Your total is $";
-        String cindhuriMessage = "you ordered a coffee";
-        String samMessage = " the total price of the 2 latte is 9";
-        String jimmyMessage = " I ordered a latte not coffee, so you owe me 4.5$ instead of 2.5$";
+        String cindhuriMessage = "Cindhur,you ordered a coffee";
+        String samMessage = " Sam, the total price of the 2 latte is 9";
+        String jimmyMessage = " Jimmy, I ordered a latte not coffee, so you owe me 4.5$ instead of 2.5$";
         
         
         // Menu variables (add yours below)
@@ -39,8 +39,8 @@ public class CafeJava {
 
         boolean isReadyOrder4 = true;
         if (isReadyOrder4){
-            System.out.println(" your order is ready ");
-             System.out.println("your total is 3.5$");
+            System.out.println("  Noah, your order is ready ");
+             System.out.println("Noah,your total is 3.5$");
         }
         else{
             System.out.println(" your order is ready");
