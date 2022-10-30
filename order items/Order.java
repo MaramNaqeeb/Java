@@ -14,7 +14,6 @@ public class Order {
     myItems = new ArrayList<Item>();
   }
  
-
   public Order() {
     this.name="";
     this.ready=false;
