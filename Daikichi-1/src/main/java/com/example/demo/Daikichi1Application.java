@@ -17,7 +17,7 @@ public class Daikichi1Application {
 	}
 	
 
-		@RequestMapping("/")
+		@RequestMapping(" ")
 		public String hello(){
 			return " Welcome";
 		}
@@ -29,7 +29,7 @@ public class Daikichi1Application {
 		
 		@RequestMapping("/tomorrow")
 		public String tomorrow(){
-			return "Tomorrow an opportunity will arise, so be sure to open to new ideas";
+			return "Tomorrow, an opportunity will arise, so be sure to open to new ideas";
 		}
 	
 }
