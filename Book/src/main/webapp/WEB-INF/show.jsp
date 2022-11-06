@@ -14,7 +14,7 @@
 <p><c:out value="${book.title}"></c:out></p>
 <p><c:out value="${book.description}"></c:out></p>
 <p><c:out value="${book.language}"></c:out></p>
-<p><c:out value="${book.numOfPages}"></c:out></p>
+<p><c:out value="${book.numberOfPages}"></c:out></p>
 
 
 </body>

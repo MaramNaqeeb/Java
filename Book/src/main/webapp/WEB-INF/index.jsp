@@ -25,7 +25,7 @@
 				<td><c:out value="${one.id}"></c:out></td>
 				<td><a href="/books/${one.id}"></a><c:out value="${one.title}"></c:out></td>
 				<td><c:out value="${one.language}"></c:out></td>
-				<td><c:out value="${one.numOfPages}"></c:out></td>
+				<td><c:out value="${one.numberOfPages}"></c:out></td>
 			</c:forEach>
 		</tr>
 		</tbody>
