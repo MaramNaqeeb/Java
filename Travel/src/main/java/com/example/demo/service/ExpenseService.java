@@ -34,4 +34,8 @@ public class ExpenseService {
 			return null;
 		}
 	}
+	
+	public Expense updateExpense(Expense expense) {
+	return expenseRepository.save(expense);
+	}
 }
