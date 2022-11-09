@@ -17,6 +17,7 @@
 </head>
 <body>
 	<h1>${product.name}</h1>
+	<a href="/">Home</a>
 
 	<c:forEach var="category" items="${product.categories}">
 		<p>

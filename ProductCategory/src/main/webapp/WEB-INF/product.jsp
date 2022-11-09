@@ -16,6 +16,7 @@
 </head>
 <body>
 <h1>New Product</h1>
+<a href="/">Home</a>
 <form:form action="/products" method="post" modelAttribute="product">
 		<p>
 			<form:label path="name"> Name</form:label>

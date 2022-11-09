@@ -16,6 +16,7 @@
 </head>
 <body>
 	<h1>${category.name}</h1>
+	<a href="/">Home</a>
 
 	<c:forEach var="product" items="${category.products}">
 		<p>

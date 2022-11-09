@@ -17,6 +17,7 @@
 </head>
 <body>
 <h1>New Category</h1>
+<a href="/">Home</a>
 	<form:form action="/categories" method="post" modelAttribute="category">
 		<p>
 			<form:label path="name"> Name</form:label>
