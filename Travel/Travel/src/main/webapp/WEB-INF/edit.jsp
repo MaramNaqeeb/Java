@@ -13,7 +13,10 @@
 <h1>Edit Expense</h1>
 <form:form action="/expense" method="post" modelAttribute="expense">
     <input type="hidden" name="_method" value="put">
-    <p><form:input type="hidden" path="id" value="${expense.id}"/><p>
+   <p>
+   
+   <form:input type="hidden" path="id" value="${expense.id}" />
+   </p>
     <p>
 			<form:label path="expenseName">Expense Name</form:label>
 			<form:errors path="expenseName" />

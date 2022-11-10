@@ -45,16 +45,9 @@ public class ExpenseController {
 			return "redirect:/expense";
 		}
 	}
-		
-		@GetMapping("/expense/{expenseId}")
-		public String show(Model model, @PathVariable( "expenseId") Long expenseid) {
-		Expense myExpense=expenseService.findExpense(expenseid);
-		model.addAttribute("expense", myExpense);
-			return "show.jsp";
-	}
 
-	@GetMapping("/expense/edit/{expenseId}")
-	public String edit(@PathVariable("expenseId") Long id, Model model) {
+	@GetMapping("/expense/{expenseid}")
+	public String edit(@PathVariable("expenseid") Long id, Model model) {
 		Expense expense1 = expenseService.findExpense(id);
 		model.addAttribute("expense", expense1);
 		return "edit.jsp";
@@ -79,8 +72,6 @@ public class ExpenseController {
 			expenseService.deleteExpense(id);
 			return "redirect:/expense";
 		}
-		
-		
 	}
 
 

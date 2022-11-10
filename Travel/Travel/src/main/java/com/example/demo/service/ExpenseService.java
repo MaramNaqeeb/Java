@@ -22,17 +22,12 @@ public class ExpenseService {
 		return (List<Expense>) expenseRepository.findAll();
 	}
 
-	public Expense createExpense(Expense e) {
-		return expenseRepository.save(e);
+	public Expense createExpense(Expense expense) {
+		return expenseRepository.save(expense);
 	}
 
 	public Expense findExpense(Long id) {
-		Optional<Expense> optionalExpense = expenseRepository.findById(id);
-		if (optionalExpense.isPresent()) {
-			return optionalExpense.get();
-		} else {
-			return null;
-		}
+		return this.expenseRepository.findById(id).orElse(null);
 	}
 	
 	public Expense updateExpense(Expense expense) {

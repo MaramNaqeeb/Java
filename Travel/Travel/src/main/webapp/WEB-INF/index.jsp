@@ -31,10 +31,10 @@
 			<c:forEach var="expense" items="${allExpenses}">
 				<tr>
 
-					<td><a href="/expense/${expense.id}"><c:out value="${expense.getExpenseName() }"></c:out></a></td>
+					<td><c:out value="${expense.getExpenseName() }"></c:out></td>
 					<td><c:out value="${expense.getVendor() }"></c:out></td>
 					<td><c:out value="${expense.getAmount() }"></c:out></td>
-					<td><a href="/expense/edit/${expense.id}">Edit</a></td>
+					<td><a href="/expense/${expense.id}">Edit</a></td>
 					<td><form action="/expense/${expense.id}" method="post">
 							    <input type="hidden" name="_method" value="delete">
 							    <input type="submit" value="Delete">

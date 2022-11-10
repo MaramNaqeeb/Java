@@ -50,23 +50,12 @@ public class Expense {
 		this.description = description;
 	}
 
-	public Long getId() {
-		return id;
-	}
-	public Long setId() {
-		return id;
-	}
-
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
-	}
-
-	public void setUpdatedAt(Date updatedAt) {
-		this.updatedAt = updatedAt;
+	public Long getId() {
+		return id;
 	}
 
 	public String getExpenseName() {
