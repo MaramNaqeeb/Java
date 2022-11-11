@@ -14,7 +14,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<table class="table">
+	<table class="table col-8">
 		<thead class="thead-dark">
 			<tr>
 				<th scope="col">Name</th>
@@ -30,11 +30,12 @@
 					<td><a href="/languages/${ language.id}"><c:out value="${language.name}"></c:out></a></td>
 					<td><c:out value="${language.creator}"></c:out></td>
 					<td><c:out value="${language.version }"></c:out></td>
-					<td><a href="/languages/edit/${language.id}">Edit</a></td>
-					<td><form action="/languages/${language.id}" method="post">
+					<td style="display:inline-flex;"><form action="/languages/${language.id}" method="post">
 							    <input type="hidden" name="_method" value="delete">
 							    <input type="submit" value="Delete">
-						</form></td>
+						</form>
+					<a href="/languages/edit/${language.id}">Edit</a></td>
+					
 			</c:forEach>
 			</tr>
 		</tbody>

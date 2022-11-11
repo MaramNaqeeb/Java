@@ -14,10 +14,11 @@
 	crossorigin="anonymous">
 </head>
 <body>
-<div style="display:inline flex;">
+<div style="display:inline flex; margin-left:13%;">
 <a href="/languages">Delete</a>
 <a href="/languages">Dashboard</a>
 </div>
+<div style="margin-left:5%;">
 <form:form action="/edit" method="post" modelAttribute="language">
   <input type="hidden" name="_method" value="put">
     <p><form:input type="hidden" path="id" value="${language.id}"/><p>
@@ -40,6 +41,6 @@
 		<input type="submit" value="Submit" />
 	</form:form>
 
-
+</div>
 </body>
 </html>
