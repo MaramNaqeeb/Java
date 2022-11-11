@@ -82,11 +82,9 @@ public class BookController {
 	}
 	
 	@DeleteMapping("/books/{id}")
-	public String deleteBook(@PathVariable("id")Long id,HttpSession session, Model model) {
+	public String deleteBook(@PathVariable("id")Long id) {
 		bookServ.delete(id);
-		Long userId = (Long) session.getAttribute("userId");
-		User myUser = userServ.findUserById(userId);
-		model.addAttribute("myUser", myUser);
+	
 		return"redirect:/books";
 	}
 	
